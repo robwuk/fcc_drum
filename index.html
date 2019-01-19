@@ -1,0 +1,101 @@
+<!doctype HTML>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<html>
+<head>
+
+  <!-- meta tags needed to make mobile responsive -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- links to bootstrap and your css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="FCC_Drum.css">
+
+<script>
+
+ </script>
+  <title>Robert Worth - Drum Kit</title>
+</head>
+
+  <body>
+    <script src="FCC_Test_Script.js"></script>
+
+    <div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
+    <div id="screen">
+      <div id="drum-machine" class="container">
+        <div id="drum-machine__title" class="column">
+          <div id="title" class="col-md-12 title">Javascript Drumkit</div>
+          <div id="author" class="col-md-12 subtitle">developed by Robert Worth</div>
+          <div id="display" class="col-md-12 drumused"><br /></div>
+        </div>
+        <div id="drum-kit" class="ROWS">
+            <div class="col-md-4">
+              <div data-key="81" id="closedhat"class="drum-pad" onclick="javascript:drumBeat('Q')">
+                Q
+                <audio data-key="81" class="clip" id="Q" src="ClosedHat.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="crash"class="drum-pad" onclick="javascript:drumBeat('W')">
+                W
+                <audio class="clip" id="W" src="Crash.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="kick"class="drum-pad" onclick="javascript:drumBeat('E')">
+                E
+                <audio class="clip" id="E" src="Kick.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="nosnare"class="drum-pad" onclick="javascript:drumBeat('A')">
+                A
+                <audio class="clip" id="A" src="noSnare.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="openhat"class="drum-pad" onclick="javascript:drumBeat('S')">
+                S
+                <audio class="clip" id="S" src="OpenHat.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="rim"class="drum-pad" onclick="javascript:drumBeat('D')">
+                D
+                <audio class="clip" id="D" src="Rim.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="snarebuzz"class="drum-pad" onclick="javascript:drumBeat('Z')">
+                Z
+                <audio class="clip" id="Z" src="SnareBuz.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="tambourine"class="drum-pad" onclick="javascript:drumBeat('X')">
+                X
+                <audio class="clip" id="X" src="Tambourine.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="trash"class="drum-pad" onclick="javascript:drumBeat('C')">
+                C
+                <audio class="clip" id="C" src="Trash.wav" type="audio/wav">
+                </audio>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="FCC_Drum.js"></script>
+  </body>
+</html>
